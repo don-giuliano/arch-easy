@@ -18,8 +18,18 @@ lang=$(whiptail --title "Choose your language" --menu "Choose your language :" 1
     "1" "English" \
     "2" "Français" \
     
-# Texts by language / Textes par langues
+# Texts / Textes
 
+case $lang in  
+    1) 
+        error_title="Error"
+        welcome_msg="Welcome to the Arch Linux installation script!"
+        ;;
+    2) 
+        error_title="Erreur"
+        welcome_msg="Bienvenue dans le script d'installation d'Arch Linux !"
+        ;;
+        
 # Automatic or personalized ? / Automatique ou personnalisé ?
 
 # Warning message / Message d'avertissement
