@@ -5,7 +5,7 @@ LIGHT_BLUE='\033[1;34m'
 RED='\033[0;31m'
 NC='\033[0m'
 
-# Error message / Message d'erreur
+# Error message / Message d'erreur  
 error_msg() {
     whiptail --title "$error_title" --msgbox "$1" 8 45  
     exit 1  
@@ -13,13 +13,13 @@ error_msg() {
 
 # Welcome / Bienvenue 
 
-# Language choice / Choix de langue
+# Language choice / Choix de langue  
 lang=$(whiptail --title "Choose your language" --menu "Choose your language :" 15 60 6 \
     "1" "English" \
     "2" "Français" \
-    
-# Texts / Textes
+    3>&1 1>&2 2>&3)
 
+# Texts / Textes  
 case $lang in  
     1) 
         error_title="Error"
@@ -29,7 +29,11 @@ case $lang in
         error_title="Erreur"
         welcome_msg="Bienvenue dans le script d'installation d'Arch Linux !"
         ;;
-        
+    *) # Ajout d'un cas par défaut pour gérer les entrées non valides  
+        error_msg "Invalid choice! Please select 1 or 2." # Message d'erreur si choix invalide  
+        ;;
+esac
+
 # Automatic or personalized ? / Automatique ou personnalisé ?
 
 # Warning message / Message d'avertissement
