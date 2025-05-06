@@ -8,6 +8,7 @@ NC='\033[0m'
 # Error message / Message d'erreur /
 
 # Welcome / Bienvenue /
+whiptail --msgbox "Hello World" 10 50 –title "Hello World"
 
 # Language choice / Choix de langue /
 
