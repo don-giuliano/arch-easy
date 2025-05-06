@@ -16,7 +16,6 @@ NC='\033[0m'
 # Automatic or personalized ? / Automatique ou personnalisé ?
 
 # Warning message / Message d'avertissement /
-whiptail --yesno "Voulez-vous continuer ?" 10 50
 
 # Automatic script / Script automatique /
 
