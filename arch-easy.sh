@@ -17,11 +17,7 @@ error_msg() {
 lang=$(whiptail --title "Select your language" --menu "Select your language :" 15 60 6 \
     "1" "English" \
     "2" "French" \
-    "3" "Italiano" \
-    "4" "Español" \
-    "5" "Português"
-    "6" "Deutsch" \
-    "7" "Português" 3>&1 1>&2 2>&3) || exit
+    "3" "Italiano" \ 3>&1 1>&2 2>&3) || exit
 
 # Texts / Textes  
 case $lang in  
@@ -32,6 +28,10 @@ case $lang in
     2) 
         error_title="Erreur"
         welcome_msg="Bienvenue dans le script d'installation d'Arch Linux !"
+        ;;
+    3) 
+        error_title="Errore"
+        welcome_msg="Benvenuto nello script di installazione di Arch Linux!"
         ;;
 esac
 
