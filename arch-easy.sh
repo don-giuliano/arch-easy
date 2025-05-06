@@ -29,9 +29,6 @@ case $lang in
         error_title="Erreur"
         welcome_msg="Bienvenue dans le script d'installation d'Arch Linux !"
         ;;
-    *) # Ajout d'un cas par défaut pour gérer les entrées non valides  
-        error_msg "Invalid choice! Please select 1 or 2." # Message d'erreur si choix invalide  
-        ;;
 esac
 
 # Automatic or personalized ? / Automatique ou personnalisé ?
