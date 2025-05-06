@@ -8,7 +8,22 @@ NC='\033[0m'
 # Error message / Message d'erreur /
 
 # Welcome / Bienvenue /
-whiptail --msgbox "                   Hello World                   " 10 50 --title "Hello World"
+whiptail --msgbox "                              
+
+ █████╗ ██████╗  ██████╗██╗  ██╗ 
+██╔══██╗██╔══██╗██╔════╝██║  ██║ 
+███████║██████╔╝██║     ███████║ 
+██╔══██║██╔══██╗██║     ██╔══██║ 
+██║  ██║██║  ██║╚██████╗██║  ██║ 
+╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝ 
+███████╗ █████╗ ███████╗██╗   ██╗
+██╔════╝██╔══██╗██╔════╝╚██╗ ██╔╝
+█████╗  ███████║███████╗ ╚████╔╝ 
+██╔══╝  ██╔══██║╚════██║  ╚██╔╝  
+███████╗██║  ██║███████║   ██║   
+╚══════╝╚═╝  ╚═╝╚══════╝   ╚═╝ 
+
+* An automated Arch Linux installer to rule them all " 10 50 --title "Hello World"
 
 # Language choice / Choix de langue /
 
