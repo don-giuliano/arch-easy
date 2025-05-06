@@ -12,7 +12,7 @@ error_msg() {
 }
 
 # Welcome / Bienvenue 
-whiptail --title "Hello world" --msgbox "$welcome_msg" 10 60
+whiptail --title "Hello world" --menu "HELLO WORLD" --msgbox "$welcome_msg" 10 60
 
 # Language choice / Choix de langue  
 lang=$(whiptail --title "Select your language" --menu "Select your language :" 15 60 6 \
