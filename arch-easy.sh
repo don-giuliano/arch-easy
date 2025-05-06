@@ -17,7 +17,8 @@ error_msg() {
 lang=$(whiptail --title "Select your language" --menu "Select your language :" 15 60 6 \
     "1" "English" \
     "2" "French" \
-    "3" "Italiano" \ 3>&1 1>&2 2>&3) || exit
+    "3" "Italiano" \ 
+    3>&1 1>&2 2>&3) || exit
 
 # Texts / Textes  
 case $lang in  
