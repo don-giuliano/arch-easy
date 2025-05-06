@@ -14,7 +14,7 @@ error_msg() {
 # Welcome / Bienvenue 
 
 # Language choice / Choix de langue  
-lang=$(whiptail --title "Choose your language" --menu "Choose your language :" 15 60 6 \
+lang=$(whiptail --title "Select your language" 15 60 6 \
     "1" "English" \
     "2" "Français" \
     3>&1 1>&2 2>&3)
