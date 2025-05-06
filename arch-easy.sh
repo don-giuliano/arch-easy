@@ -19,20 +19,7 @@ lang=$(whiptail --title "Select your language" --menu "Select your language :" 1
     "1" "English" \
     "2" "French" \
     "3" "Italiano" \ 
-    3>&1 1>&2 2>&3) || exit--msgbox "$welcome_msg" 10 60
-
-# Language choice / Choix de langue  
-lang=$(whiptail --title "Select your language" --menu "Select your language :" 15 60 6 \
-    "1" "English" \
-    "2" "French" \
-    "3" "Italiano" \ 
-    3>&1 1>&2 2>&3) || exit
-# Language choice / Choix de langue  
-lang=$(whiptail --title "Select your language" --menu "Select your language :" 15 60 6 \
-    "1" "English" \
-    "2" "French" \
-    "3" "Italiano" \ 
-    3>&1 1>&2 2>&3) || exit
+    3>&1 1>&2 2>&3)
 
 # Texts / Textes  
 case $lang in  
