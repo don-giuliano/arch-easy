@@ -158,6 +158,19 @@ sudo pacman -S --noconfirm gstreamer gst-plugins-bad gst-plugins-base gst-plugin
 
 sudo pacman -S --noconfirm jasper libwebp libavif libheif perl-image-exiftool qt6-imageformats ffmpegthumbnailer
 
+sudo pacman -S --needed \
+  pipewire \
+  wireplumber \
+  rtkit \
+  pipewire-alsa \
+  pipewire-pulse \
+  jack2 \
+  alsa-utils \
+  alsa-plugins \
+  alsa-firmware \
+  alsa-ucm-conf \
+  sof-firmware
+
 sudo pacman -S --noconfirm wayland
 
 sudo pacman -S --noconfirm plasma-desktop bluedevil breeze-gtk discover kde-gtk-config kdeplasma-addons kgamma kinfocenter kscreen ksshaskpass kwallet-pam kwrited ocean-sound-theme plasma-browser-integration plasma-disks plasma-firewall plasma-nm plasma-pa plasma-systemmonitor plasma-thunderbolt plasma-vault plasma-welcome plasma-workspace-wallpapers powerdevil print-manager sddm sddm-kcm spectacle wacomtablet xdg-desktop-portal-kde konsole
