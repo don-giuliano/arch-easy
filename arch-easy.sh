@@ -197,7 +197,6 @@ sudo pacman -S --noconfirm steam
 sudo pacman -S --noconfirm flatpak flatpak-kcm
 
 flatpak install -y flathub app/tv.plex.PlexDesktop
-
 flatpak install -y protonvpn
 
 systemctl --user enable arch-update.timer
