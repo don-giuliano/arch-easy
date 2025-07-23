@@ -5,7 +5,6 @@ set -e
 echo "Début de la mise à jour système et config pacman…"
 sudo pacman -Syu --noconfirm
 
-# Configuration pacman
 sudo sed -i 's/^#Color$/Color/' /etc/pacman.conf
 sudo sed -i 's/^#\(ParallelDownloads.*\)/\1\nILoveCandy/' /etc/pacman.conf
 sudo sed -i 's/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j$(nproc)\"/' /etc/makepkg.conf
@@ -13,7 +12,6 @@ sudo sed -i '/^#\[multilib\]/,/^#Include = \/etc\/pacman.d\/mirrorlist/ s/^#//' 
 sudo pacman -S --noconfirm pacman-contrib
 sudo systemctl enable paccache.timer
 
-# Repo Chaotic-AUR
 sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
 sudo pacman-key --lsign-key 3056513887B78AEB
 sudo pacman -U --noconfirm 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst'
@@ -198,10 +196,8 @@ sudo pacman -S --noconfirm steam
 
 sudo pacman -S --noconfirm flatpak flatpak-kcm
 
-# Installation Plex sans menu interactif
 flatpak install -y flathub app/tv.plex.PlexDesktop
 
-# Installation ProtonVPN flatpak
 flatpak install -y protonvpn
 
 systemctl --user enable arch-update.timer
